@@ -1,0 +1,19 @@
+<div id="app"></div>
+
+
+<script src="./vue.js"></script>
+<script>
+  new Vue({
+    data(){
+      return {
+        test:"hell world"
+      }
+    },
+    create(){
+      console.log("this is create")
+    },
+    render(){
+      return document.createTextNode(this.test)
+    }
+  }).$mount("#app")
+</script>
