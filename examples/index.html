@@ -4,16 +4,23 @@
 <script src="./vue.js"></script>
 <script>
   new Vue({
-    data(){
+    data() {
       return {
-        test:"hell world"
+        foo: 'foo',
+        bar: {
+          baz: 'baz',
+        }
       }
     },
-    create(){
-      console.log("this is create")
+    created() {
+      console.log('created');
+      setTimeout(() => {
+        this.foo = 'bar'
+      }, 1000)
+      // this.$set(this.foo.bar, 'dong', 'dong')
     },
-    render(){
-      return document.createTextNode(this.test)
+    render() {
+      return document.createTextNode(this.foo)
     }
-  }).$mount("#app")
+  }).$mount('#app')
 </script>

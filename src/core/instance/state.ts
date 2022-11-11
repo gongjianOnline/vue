@@ -57,6 +57,7 @@ export function initState(vm: Component) {
   initSetup(vm)
 
   if (opts.methods) initMethods(vm, opts.methods)
+  
   if (opts.data) {
     initData(vm)
   } else {

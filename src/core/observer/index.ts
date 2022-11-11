@@ -97,6 +97,24 @@ export class Observer {
 
 // helpers
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Attempt to create an observer instance for a value,
  * returns the new observer if successfully observed,
@@ -123,6 +141,32 @@ export function observe(
     return new Observer(value, shallow, ssrMockReactivity)
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Define a reactive property on an Object.
@@ -213,6 +257,22 @@ export function defineReactive(
 
   return dep
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Set a property on an object. Adds the new property and
